@@ -5,7 +5,6 @@ const dbAddr = process.env.DATABASE_URL || `postgress://localhost/back_end_revie
 
 const create = ({name}) => {
     return getDbConn(dbAddr).none(
-        `INSERT INTO genres (name) VALUE ($[name]);`,
-        {name}
+        `INSERT INTO genres (name) VALUE ($[name]) RETURNING id`,        {name}
     );
-}
+const get = () => getDbConn(dbAddrr)
