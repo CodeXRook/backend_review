@@ -4,7 +4,7 @@ CREATE DATABASE back_end_review;
 \c back_end_review;
 
 
- CREATE TABLE genres(
-  id INT REFERENCES movies(genre_id),
-  name VARCHAR NOT NULL
-);
+ CREATE TABLE genres();
+ CREATE TABLE movies();
+ CREATE TABLE ratings();
+ CREATE TABLE comments();
